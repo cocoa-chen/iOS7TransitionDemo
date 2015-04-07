@@ -15,6 +15,7 @@
 		69E909B91ACE8A6800B53468 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E909B71ACE8A6800B53468 /* LaunchScreen.xib */; };
 		69E909C51ACE8A6800B53468 /* iOS7TransitionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E909C41ACE8A6800B53468 /* iOS7TransitionDemoTests.m */; };
 		69E909D01ACE8A9000B53468 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E909CF1ACE8A9000B53468 /* DetailViewController.m */; };
+		69E909D31ACE8E2100B53468 /* CCCustomAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E909D21ACE8E2100B53468 /* CCCustomAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		69E909C41ACE8A6800B53468 /* iOS7TransitionDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS7TransitionDemoTests.m; sourceTree = "<group>"; };
 		69E909CE1ACE8A9000B53468 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		69E909CF1ACE8A9000B53468 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		69E909D11ACE8E2100B53468 /* CCCustomAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCustomAnimator.h; sourceTree = "<group>"; };
+		69E909D21ACE8E2100B53468 /* CCCustomAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCustomAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				69E909B01ACE8A6800B53468 /* ViewController.m */,
 				69E909CE1ACE8A9000B53468 /* DetailViewController.h */,
 				69E909CF1ACE8A9000B53468 /* DetailViewController.m */,
+				69E909D11ACE8E2100B53468 /* CCCustomAnimator.h */,
+				69E909D21ACE8E2100B53468 /* CCCustomAnimator.m */,
 				69E909B21ACE8A6800B53468 /* Main.storyboard */,
 				69E909B51ACE8A6800B53468 /* Images.xcassets */,
 				69E909B71ACE8A6800B53468 /* LaunchScreen.xib */,
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69E909B11ACE8A6800B53468 /* ViewController.m in Sources */,
+				69E909D31ACE8E2100B53468 /* CCCustomAnimator.m in Sources */,
 				69E909AE1ACE8A6800B53468 /* AppDelegate.m in Sources */,
 				69E909AB1ACE8A6800B53468 /* main.m in Sources */,
 				69E909D01ACE8A9000B53468 /* DetailViewController.m in Sources */,
@@ -422,6 +428,7 @@
 				69E909CA1ACE8A6800B53468 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69E909CB1ACE8A6800B53468 /* Build configuration list for PBXNativeTarget "iOS7TransitionDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +437,7 @@
 				69E909CD1ACE8A6800B53468 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

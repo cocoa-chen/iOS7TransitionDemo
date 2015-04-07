@@ -8,8 +8,11 @@
 
 #import "ViewController.h"
 #import "DetailViewController.h"
+#import "CCCustomAnimator.h"
 
 @interface ViewController ()
+
+@property (nonatomic,strong) CCCustomAnimator *animator;
 
 @end
 
@@ -29,7 +32,12 @@
 
 - (void)onButtonTapped
 {
+    if (!_animator) {
+        self.animator = [[CCCustomAnimator alloc] init];
+    }
     DetailViewController *vc = [[DetailViewController alloc] init];
+    vc.transitioningDelegate = self.animator;
+    [self.animator setPresentingVC:vc];
     [self presentViewController:vc animated:YES completion:nil];
 }
 
