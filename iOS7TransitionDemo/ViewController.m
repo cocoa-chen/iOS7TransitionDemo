@@ -8,11 +8,11 @@
 
 #import "ViewController.h"
 #import "DetailViewController.h"
-#import "CCCustomAnimator.h"
+#import "CustomTransitionAnimation.h"
 
 @interface ViewController ()
 
-@property (nonatomic,strong) CCCustomAnimator *animator;
+@property (nonatomic,strong) CustomTransitionAnimation *animator;
 
 @end
 
@@ -28,15 +28,17 @@
     [button setTitle:@"Click Me" forState:UIControlStateNormal];
     [button addTarget:self action:@selector(onButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
+    
 }
 
 - (void)onButtonTapped
 {
     if (!_animator) {
-        self.animator = [[CCCustomAnimator alloc] init];
+        self.animator = [[CustomTransitionAnimation alloc] init];
     }
     DetailViewController *vc = [[DetailViewController alloc] init];
     vc.transitioningDelegate = self.animator;
+    //设置可交互的ViewController，将为该ViewController添加手势交互
     [self.animator setPresentingVC:vc];
     [self presentViewController:vc animated:YES completion:nil];
 }

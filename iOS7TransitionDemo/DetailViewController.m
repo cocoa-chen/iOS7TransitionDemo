@@ -9,7 +9,6 @@
 #import "DetailViewController.h"
 
 @interface DetailViewController ()
-<UIViewControllerTransitioningDelegate>
 
 @end
 
